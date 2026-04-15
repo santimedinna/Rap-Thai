@@ -108,7 +108,7 @@ export default function Gallery() {
           className="text-center mt-10"
         >
           <a
-            href="[LINK_INSTAGRAM]"
+            href="https://www.instagram.com/rapthai.mt/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-body text-rap-blanco/60 hover:text-rap-dorado transition-colors duration-200 text-sm tracking-wide"
