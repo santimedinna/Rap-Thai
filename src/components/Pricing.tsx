@@ -73,13 +73,13 @@ export default function Pricing() {
         </motion.div>
       </div>
 
-      <p className="font-body text-rap-blanco/20 text-xs text-center mt-6">
+      <p className="font-body text-rap-blanco/60 text-xs text-center mt-6">
         Sitio producido por{" "}
         <a
           href="https://www.levelgrowthagency.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-rap-blanco/50 transition-colors duration-200"
+          className="hover:text-rap-blanco/80 transition-colors duration-200"
         >
           Level Growth
         </a>

@@ -9,7 +9,8 @@
       "Bash(identify /c/Users/usuario/rap-thai/public/images/logo.png)",
       "Bash(node -e \"require\\('sharp'\\); console.log\\('sharp ok'\\)\")",
       "Bash(node -e ':*)",
-      "Bash(echo \"exit: $?\")"
+      "Bash(echo \"exit: $?\")",
+      "Bash(ls -lh /c/Users/usuario/rap-thai/public/images/foto_nicolas*.jpeg)"
     ],
     "additionalDirectories": [
       "C:\\Users\\usuario\\rap-thai\\src"
