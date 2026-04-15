@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run:*)",
+      "Bash(node -e \"const lr = require\\('/c/Users/usuario/rap-thai/node_modules/lucide-react'\\); console.log\\(Object.keys\\(lr\\).filter\\(k => k.toLowerCase\\(\\).includes\\('social'\\) || k.toLowerCase\\(\\).includes\\('share'\\) || k.toLowerCase\\(\\).includes\\('link'\\)\\)\\)\")",
+      "Bash(node -e \"const lr = require\\('C:/Users/usuario/rap-thai/node_modules/lucide-react'\\); console.log\\(Object.keys\\(lr\\).filter\\(k => /^[A-Z]/.test\\(k\\)\\).slice\\(0, 20\\)\\)\")",
+      "Bash(node -e \"const lr = require\\('C:/Users/usuario/rap-thai/node_modules/lucide-react'\\); const keys = Object.keys\\(lr\\).filter\\(k => /^[A-Z]/.test\\(k\\)\\); console.log\\(keys.filter\\(k => !k.endsWith\\('Icon'\\)\\).filter\\(k => k.startsWith\\('Ex'\\) || k.startsWith\\('Link'\\) || k.startsWith\\('Share'\\) || k.startsWith\\('At'\\) || k.startsWith\\('Hash'\\) || k.startsWith\\('Camera'\\)\\)\\)\")",
+      "Bash(node -e \"const lr = require\\('C:/Users/usuario/rap-thai/node_modules/lucide-react'\\); console.log\\('X' in lr, 'XIcon' in lr, 'Check' in lr, 'Clock' in lr, 'ChevronDown' in lr, 'Link' in lr\\)\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\usuario\\rap-thai\\src"
+    ]
+  }
+}
