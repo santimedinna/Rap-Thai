@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 function InstagramIcon({ size = 14 }: { size?: number }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24"
@@ -25,10 +27,10 @@ export default function Footer() {
 
       {/* ── Mobile ── */}
       <div className="md:hidden py-6 flex flex-col items-center gap-3 text-center">
-        <img src="/images/logo.png" alt="Rap Thai" className="h-10 w-auto object-contain" />
+        <Image src="/images/logo.webp" alt="Rap Thai" width={40} height={40} className="h-10 w-auto object-contain" />
         <div>
           <p className="font-display text-xl text-rap-blanco tracking-widest leading-none">RAP THAI</p>
-          <p className="font-body text-rap-blanco/30 text-xs mt-0.5">Muay Thai de alto rendimiento en Córdoba</p>
+          <p className="font-body text-rap-blanco/60 text-xs mt-0.5">Muay Thai de alto rendimiento en Córdoba</p>
         </div>
 
         {/* Redes en una línea */}
@@ -37,7 +39,7 @@ export default function Footer() {
             className="flex items-center gap-1 hover:text-rap-dorado transition-colors duration-200">
             <InstagramIcon size={13} /> RapThai.mt
           </a>
-          <span className="text-rap-blanco/20">|</span>
+          <span className="text-rap-blanco/60">|</span>
           <a href="https://wa.me/5493517738904" target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-1 hover:text-rap-dorado transition-colors duration-200">
             <WhatsAppIcon size={13} /> Habla con Nico
@@ -46,11 +48,11 @@ export default function Footer() {
 
         {/* Dirección */}
         <a href="https://maps.app.goo.gl/hJkWLBD1bnER2pDP7" target="_blank" rel="noopener noreferrer"
-          className="font-body text-rap-blanco/40 text-xs hover:text-rap-dorado transition-colors duration-200">
+          className="font-body text-rap-blanco/70 text-xs hover:text-rap-dorado transition-colors duration-200">
           Javier Díaz 597, Córdoba
         </a>
 
-        <p className="font-body text-rap-blanco/20 text-[10px]">© 2025 Rap Thai. Todos los derechos reservados.</p>
+        <p className="font-body text-rap-blanco/60 text-xs">© 2025 Rap Thai. Todos los derechos reservados.</p>
       </div>
 
       {/* ── Desktop ── */}
@@ -59,24 +61,24 @@ export default function Footer() {
 
           {/* Logo + nombre */}
           <div className="flex flex-col items-start gap-3">
-            <img src="/images/logo.png" alt="Rap Thai" className="h-14 w-auto object-contain" />
+            <Image src="/images/logo.webp" alt="Rap Thai" width={56} height={56} className="h-14 w-auto object-contain" />
             <div>
               <p className="font-display text-2xl text-rap-blanco tracking-widest leading-none mb-1">Rap Thai</p>
-              <p className="font-body text-rap-blanco/30 text-xs tracking-wide">Muay Thai de alto rendimiento en Córdoba</p>
+              <p className="font-body text-rap-blanco/60 text-xs tracking-wide">Muay Thai de alto rendimiento en Córdoba</p>
             </div>
           </div>
 
           {/* Columnas info */}
           <div className="flex gap-16 text-left">
             <div>
-              <p className="font-body text-rap-blanco/30 text-xs tracking-[0.2em] uppercase mb-3">Ubicación</p>
+              <p className="font-body text-rap-blanco/60 text-xs tracking-[0.2em] uppercase mb-3">Ubicación</p>
               <a href="https://maps.app.goo.gl/hJkWLBD1bnER2pDP7" target="_blank" rel="noopener noreferrer"
                 className="font-body text-rap-blanco/70 text-sm leading-relaxed hover:text-rap-dorado transition-colors duration-200">
                 Javier Díaz 597<br />Córdoba, Argentina
               </a>
             </div>
             <div>
-              <p className="font-body text-rap-blanco/30 text-xs tracking-[0.2em] uppercase mb-3">Redes</p>
+              <p className="font-body text-rap-blanco/60 text-xs tracking-[0.2em] uppercase mb-3">Redes</p>
               <a href="https://www.instagram.com/rapthai.mt/" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 font-body text-rap-blanco/70 text-sm hover:text-rap-dorado transition-colors duration-200 mb-2">
                 <InstagramIcon size={16} /> RapThai.mt
@@ -90,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/5 mt-10 pt-8 text-center">
-          <p className="font-body text-rap-blanco/20 text-xs">© 2025 Rap Thai. Todos los derechos reservados.</p>
+          <p className="font-body text-rap-blanco/60 text-xs">© 2025 Rap Thai. Todos los derechos reservados.</p>
         </div>
       </div>
 

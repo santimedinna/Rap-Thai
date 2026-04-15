@@ -32,6 +32,9 @@ export default function RootLayout({
       lang="es"
       className={`${bebasNeue.variable} ${barlow.variable}`}
     >
+      <head>
+        <link rel="preload" as="image" href="/videos/hero-poster.webp" />
+      </head>
       <body>{children}</body>
     </html>
   );

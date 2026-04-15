@@ -57,6 +57,7 @@ export default function Coach() {
               alt={`Nicolás Gutiérrez, profesor de Muay Thai en Rap Thai Córdoba – foto ${i + 1}`}
               fill
               className="object-cover transition-opacity duration-700"
+              sizes="(max-width: 768px) 100vw, 50vw"
               style={{ opacity: i === current ? 1 : 0 }}
               priority={i === 0}
             />

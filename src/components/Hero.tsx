@@ -59,12 +59,16 @@ export default function Hero() {
         {/* Video — solo portrait */}
         <video
           className="absolute inset-0 w-full h-full object-cover landscape:hidden"
-          src="/videos/edit_hero.mp4"
+          poster="/videos/hero-poster.webp"
           autoPlay
           muted
           loop
           playsInline
-        />
+          preload="none"
+        >
+          <source src="/videos/edit_hero.mp4" type="video/mp4" />
+          <track kind="captions" src="/videos/captions.vtt" srcLang="es" label="Español" default />
+        </video>
         {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black/40" />
       </div>

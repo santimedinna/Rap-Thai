@@ -6,28 +6,28 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    photo: "/images/testimonios/santiago.jpg",
+    photo: "",
     initials: "S",
     name: "Santiago",
     label: "Alumno desde 2024 · Competidor",
     text: "Desde chiquito quería hacer boxeo, pero no me dejaron porque pensaban que eran ambientes muy violentos. Con mucho humor y mucho esfuerzo Nico me ayudó a cumplirle un sueño a mi yo de 6 años.",
   },
   {
-    photo: "/images/testimonios/samuel.jpg",
+    photo: "",
     initials: "S",
     name: "Samuel",
     label: "Alumno desde 2023 · Recreativo",
     text: "No hay mejor terapia después de un día de full estrés del laburo que entrar al tatami con los chicos. Risas, golpes y transpiración, mi verdadero cable a tierra.",
   },
   {
-    photo: "/images/testimonios/damian.jpg",
+    photo: "",
     initials: "D",
     name: "Damián",
     label: "Alumno desde 2020 · Recreativo",
     text: "He practicado artes marciales desde chico y como profesional de la actividad física soy muy exigente con dónde entreno. Elegí Rap Thai porque Nico tiene una base técnica impecable.",
   },
   {
-    photo: "/images/testimonios/sofia.jpg",
+    photo: "",
     initials: "S",
     name: "Sofía",
     label: "Alumna desde 2024 · Futura competidora",
@@ -38,7 +38,7 @@ const testimonials = [
 function Avatar({ photo, initials, name }: { photo: string; initials: string; name: string }) {
   const [error, setError] = useState(false);
 
-  if (error) {
+  if (!photo || error) {
     return (
       <div className="w-16 h-16 rounded-full bg-rap-rojo flex items-center justify-center flex-shrink-0">
         <span className="font-display text-2xl text-rap-blanco">{initials}</span>

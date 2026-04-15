@@ -27,7 +27,7 @@ export default function Header() {
 
         {/* Logo */}
         <Image
-          src="/images/logo.png"
+          src="/images/logo.webp"
           alt="Rap Thai"
           width={56}
           height={56}
